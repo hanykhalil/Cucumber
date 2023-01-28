@@ -35,12 +35,11 @@ public class TestBase {
 //		browserstackOptions.put("local", "false");
 //		capabilities.setCapability("bstack:options", browserstackOptions);
 
-    	WebDriverManager.chromedriver().setup();
+ //   	WebDriverManager.chromedriver().setup();
 //		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
-//		WebDriverManager.chromedriver().setup();
-//		driver= new ChromeDriver();
-        driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		WebDriverManager.chromedriver().setup();
+		driver= new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.deutsche-bank.de/");
 		driver.manage().window().maximize();
 
