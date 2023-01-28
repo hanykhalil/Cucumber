@@ -2,8 +2,6 @@
  *
  */
 package stepDefintion;
-import java.net.MalformedURLException;
-
 import cucumber.mainCucumber.TestBase;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -15,9 +13,9 @@ import io.cucumber.java.Before;
 public class Hooks extends TestBase{
 
 	@Before("@regression")
-	public void runBeforeAnyScenario() throws MalformedURLException
+	public void runBeforeAnyScenario()
 	{
-		LunchTheBrowser();
+		
 	}
 
 	@After("@regression")

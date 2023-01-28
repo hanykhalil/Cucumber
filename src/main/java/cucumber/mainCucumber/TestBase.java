@@ -37,8 +37,9 @@ public class TestBase {
 
     	WebDriverManager.chromedriver().setup();
 //		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
-		WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+//		WebDriverManager.chromedriver().setup();
+//		driver= new ChromeDriver();
+        driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.deutsche-bank.de/");
 		driver.manage().window().maximize();
