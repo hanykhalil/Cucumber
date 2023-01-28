@@ -1,7 +1,7 @@
 /**
  * 
  */
-package stepDefintionTest;
+package stepDefintion;
 
 /**
  * @author 13465
