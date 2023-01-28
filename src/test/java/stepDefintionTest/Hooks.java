@@ -10,7 +10,7 @@ import io.cucumber.java.Before;
  * @author 13465
  *
  */
-public class HooksTest extends TestBase{
+public class Hooks extends TestBase{
 
 	@Before("@regression")
 	public void runBeforeAnyScenario()
