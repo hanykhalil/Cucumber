@@ -1,7 +1,7 @@
 /**
  *
  */
-package stepDefintion;
+package stepDefintionTests;
 import cucumber.mainCucumber.TestBase;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
