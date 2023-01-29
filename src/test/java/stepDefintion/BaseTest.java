@@ -1,7 +1,7 @@
 /**
  *
  */
-package cucumber.mainCucumber;
+package stepDefintion;
 
 import java.net.MalformedURLException;
 import java.time.Duration;
@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  * @author 13465
  *
  */
-public class TestBase {
+public class BaseTest {
 	public static WebDriver driver;
 //	public static final String USERNAME = "khalilhany_KLrQIy";
 //    public static final String AUTOMATE_KEY = "ckCHbxQXw1dXpFeLpzBC";

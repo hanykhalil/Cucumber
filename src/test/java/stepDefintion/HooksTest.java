@@ -2,7 +2,7 @@
  *
  */
 package stepDefintion;
-import cucumber.mainCucumber.TestBase;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
@@ -10,7 +10,7 @@ import io.cucumber.java.Before;
  * @author 13465
  *
  */
-public class HooksTest extends TestBase{
+public class HooksTest extends BaseTest{
 	
 	@Before("@regression")
 	public void runBeforeAnyScenario()
@@ -18,10 +18,10 @@ public class HooksTest extends TestBase{
 		
 	}
 
-//	@After("@regression")
-//	public void runAfterAnyScenario()
-//	{
-//		driver.quit();
-//	}
+	@After("@regression")
+	public void runAfterAnyScenario()
+	{
+		driver.quit();
+	}
 }
 
