@@ -11,17 +11,17 @@ import io.cucumber.java.Before;
  *
  */
 public class HooksTest extends TestBase{
-
+	
 	@Before("@regression")
 	public void runBeforeAnyScenario()
 	{
 		
 	}
 
-	@After("@regression")
-	public void runAfterAnyScenario()
-	{
-		driver.quit();
-	}
+//	@After("@regression")
+//	public void runAfterAnyScenario()
+//	{
+//		driver.quit();
+//	}
 }
 
