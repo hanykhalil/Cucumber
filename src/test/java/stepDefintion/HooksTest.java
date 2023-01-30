@@ -15,7 +15,7 @@ public class HooksTest extends BaseTest{
 	@Before("@regression")
 	public void runBeforeAnyScenario()
 	{
-		
+		System.out.println("before running any step");
 	}
 
 	@After
