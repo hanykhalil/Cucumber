@@ -18,7 +18,7 @@ public class HooksTest extends BaseTest{
 		System.out.println("before running any step");
 	}
 
-	
+	@After
 	public void runAfterAnyScenario()
 	{
 		driver.quit();
