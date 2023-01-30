@@ -8,6 +8,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -38,10 +39,12 @@ public class BaseTest {
 
 //    	WebDriverManager.chromedriver().setup();
 //		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
-//		System.setProperty("webdriver.chrome.driver","C:\\Users\\13465\\eclipse\\workspace\\cucumber\\drivers\\chromedriver.exe");
-//		driver = new ChromeDriver();
-		WebDriverManager.edgedriver().setup();
-		driver= new EdgeDriver();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\13465\\eclipse\\workspace\\cucumber\\drivers\\chromedriver.exe");
+		ChromeOptions optionsBeta = new ChromeOptions();
+		optionsBeta.setBinary("C:\\Users\\13465\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");      
+		driver = new ChromeDriver(optionsBeta);
+//		WebDriverManager.edgedriver().setup();
+//		driver= new EdgeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.deutsche-bank.de/");
 		driver.manage().window().maximize();
