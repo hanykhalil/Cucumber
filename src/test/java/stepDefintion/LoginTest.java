@@ -31,7 +31,7 @@ import io.cucumber.java.en.When;
 public class LoginTest extends BaseTest {
 	@Test
 	@Given("The user open the application and go to login page")
-	public void the_user_open_the_application_and_go_to_login_page() throws MalformedURLException {
+	public void the_user_open_the_application_and_go_to_login_page(){
 		LunchTheBrowser();
 	}
 
