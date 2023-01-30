@@ -37,8 +37,10 @@ public class BaseTest {
 
  //   	WebDriverManager.chromedriver().setup();
 //		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
-		WebDriverManager.chromedriver().setup();
-		driver= new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\13465\\eclipse\\workspace\\cucumber\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+//		WebDriverManager.chromedriver().setup();
+//		driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.get("https://www.deutsche-bank.de/");
 		driver.manage().window().maximize();
