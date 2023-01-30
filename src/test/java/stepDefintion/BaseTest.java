@@ -35,7 +35,7 @@ public class BaseTest {
 //		browserstackOptions.put("local", "false");
 //		capabilities.setCapability("bstack:options", browserstackOptions);
 
- //   	WebDriverManager.chromedriver().setup();
+//    	WebDriverManager.chromedriver().setup();
 //		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\13465\\eclipse\\workspace\\cucumber\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
