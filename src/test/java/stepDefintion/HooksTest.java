@@ -4,6 +4,7 @@
 package stepDefintion;
 
 import io.cucumber.java.After;
+
 import io.cucumber.java.Before;
 
 /**
@@ -12,13 +13,13 @@ import io.cucumber.java.Before;
  */
 public class HooksTest extends BaseTest{
 	
-	@Before("@regression")
+	@org.junit.Before
 	public void runBeforeAnyScenario()
 	{
 		
 	}
 
-	@After("@regression")
+	@org.junit.After
 	public void runAfterAnyScenario()
 	{
 		driver.quit();
